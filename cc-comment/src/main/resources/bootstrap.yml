@@ -1,0 +1,12 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: comment
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://localhost:8848
+      config:
+        server-addr: http://localhost:8848
+        file-extension: yml

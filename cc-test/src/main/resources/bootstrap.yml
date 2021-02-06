@@ -1,0 +1,12 @@
+server:
+  port: 8003
+spring:
+  application:
+    name: test
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://localhost:8848
+      config:
+        server-addr: http://localhost:8848
+        file-extension: yml

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.code.community.oss.dao.MinioFileMapper">
+
+<!--    <select id="getAnswersByQuestionId" parameterType="String" resultType="com.code.community.test.model.vo.AnswerVo">-->
+<!--        SELECT id,content from answer WHERE question_id = #{questionId}-->
+<!--    </select>-->
+
+    <select id="getImages" parameterType="java.util.List" resultType="com.code.community.oss.model.po.MinioFile">
+        select url,file_info from minio_file
+        <where>
+            state = '1' and
+            <if test="list != null">
+                <!-- 循环传入的集合参数
+                     collection:传入参数中的集合的变量名称
+                     item:每次循环从集合中取出的数据保存到item中
+                     open:循环开始拼接的字符串
+                     close:循环结束拼接的字符串
+                     separator:循环中拼接的分隔符
+                 -->
+                <foreach collection="list" item="videoId" open="file_info in(" close=")" separator=",">
+                    #{videoId}
+                </foreach>
+            </if>
+        </where>
+    </select>
+
+</mapper>

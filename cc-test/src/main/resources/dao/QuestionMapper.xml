@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.code.community.test.dao.QuestionMapper">
+
+    <resultMap id="questionResultMap" type="com.code.community.test.model.vo.QuestionVo">
+        <id property="id" column="id"></id>
+        <result property="content" column="content"/>
+        <collection property="answers" column="id" select="com.code.community.test.dao.AnswerMapper.getAnswersByQuestionId"/>
+    </resultMap>
+
+    <select id="getQuestionByCategory" parameterType="String" resultMap="questionResultMap">
+        SELECT id,content from question WHERE question_category = #{category}
+    </select>
+
+
+</mapper>
