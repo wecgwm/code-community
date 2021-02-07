@@ -2,6 +2,7 @@
 code-community是一个微服务社区系统。采用了Spring Cloud、Spring Cloud Alibaba、Spring Boot、spring security oauth2、Mybatis Plus等相关技术。目前项目提供了博客、答题、视频等功能。
 ## 模块结构
 以下服务均依赖于nacos
+　　
 | 服务分类|服务名                     |  先决条件            |   简介      |  端口               | 
 |---------------------------|-------------------------|-------------|-------------------------|
 | 认证服务|cc-auth                |                 |  基于oauth2、JWT   |  http://localhost:9002  | 
@@ -15,5 +16,7 @@ code-community是一个微服务社区系统。采用了Spring Cloud、Spring Cl
 
 ## 预览
  ![1](http://wecgwm.gitee.io/image-bed/cc-1.png)
+ 　　
  ![2](http://wecgwm.gitee.io/image-bed/cc-2.png)
+ 　　
  ![3](http://wecgwm.gitee.io/image-bed/cc-3.png)
