@@ -19,8 +19,6 @@ code-community是一个微服务社区系统。采用了Spring Cloud、Spring Cl
  ![1](https://gitee.com/wecgwm/image-bed/raw/master/7df45b040b61228a093805550aaf72b.png)
 **浏览博客**
  ![1](https://gitee.com/wecgwm/image-bed/raw/master/396697658c64b3edf7be84ae5251a10.png)
-**个人中心**
- ![1](https://gitee.com/wecgwm/image-bed/raw/master/6d3b61aa5479c0f476880957badb448.png)
 **答题** 　　
  ![2](http://wecgwm.gitee.io/image-bed/cc-2.png)
 **视频** 　　
