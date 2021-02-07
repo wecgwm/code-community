@@ -15,8 +15,11 @@ code-community是一个微服务社区系统。采用了Spring Cloud、Spring Cl
 | 用户服务　　　|cc-user              | mysql、redis、cc-auth    　 |   用户服务  　　　　　　　　　　 |  http://localhost:8001  |
 
 ## 预览
+**首页**
  ![1](http://wecgwm.gitee.io/image-bed/cc-1.png)
- 　　
+**浏览博客**
+**个人中心**
+**答题** 　　
  ![2](http://wecgwm.gitee.io/image-bed/cc-2.png)
- 　　
+**视频** 　　
  ![3](http://wecgwm.gitee.io/image-bed/cc-3.png)
